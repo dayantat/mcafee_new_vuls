@@ -1,0 +1,14 @@
+---
+        name: mcafee_new_vuls
+        pack: mcafee_new_vuls
+        runner_type: python-script
+        description: Checks if any new vulnerabilities are present
+        enabled: true
+        entry_point: mcafee_vuls.py
+        parameters:
+          days:
+            type: integer
+            description: "If test check for last vulnerability"
+            default: -999
+            position: 1
+            required: true

@@ -1,0 +1,10 @@
+---
+ref: mcafee_new_vuls
+name : mcafee_new_vuls
+description : template for pack creation
+keywords:
+  - McAfee
+  - Vulnerabilities
+version: 0.0.1
+author : Dayan Tatlock
+email : auautomationrapteam@dimensiondata.com

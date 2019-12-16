@@ -1,0 +1,32 @@
+{
+  "source_code": {
+    "backlog": "",
+    "demo": "",
+    "documentation": "",
+    "scm": "<Copy the SSH Repository URL from SCM>",
+    "testSystem": "",
+    "userVoice": "",
+    "discussion": ""
+  },
+  "organization": {
+    "company": "Dimension Data",
+    "business_unit": "AU - Automation"
+  },
+  "project_name": "<project-name>",
+  "description": "<project description>",
+  "confidentiality": "<Example: Restricted Confidential - Internal use only>",
+  "dependencies": "<Example: Stackstorm components>",
+  "technology": {
+    "programming_languages": [
+      "<Example: Python>"
+    ],
+    "platform": [
+      "stackstorm"
+    ]
+  },
+  "open_to_contribution": "yes",
+  "access": "Internal (DD)",
+  "type": "Automation",
+  "license": "internal-only",
+  "development_status": "<Example: release>"
+}

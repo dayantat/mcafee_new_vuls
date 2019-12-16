@@ -1,0 +1,27 @@
+stages:
+  - Test
+  
+variables:
+  PACK_NAME: CHANGE_ME
+  LOG_DIRECTORY: $CI_PROJECT_DIR/TestResults
+  # used to modified the error threshold for unit tests
+  PIPELINE_ERROR_THRESHOLD: 4
+
+Unit Tests:
+  stage: Test
+  tags:
+  # azure build server
+    - azure_prod-build-linux
+  image: artifactory.dimensiondata.com/docker/dd_st2_ci_tools:latest
+  before_script:
+    - mkdir -p $LOG_DIRECTORY
+  script:
+    - st2-run-unittests $CI_PROJECT_DIR
+  artifacts:
+    when: on_failure
+    paths:
+      - "$LOG_DIRECTORY"
+  only:
+    - develop
+    - /^feature/.*$/
+  when: always
