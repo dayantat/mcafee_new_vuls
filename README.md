@@ -49,3 +49,4 @@ When creating StackStorm packs it is important that testing be completed on a CI
 * Won't fail to install into StackStorm
 * Be tested and have passed them during the testing phase
 * Provide fast feed back on code commit
+Test mod
